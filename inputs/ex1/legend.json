@@ -1,0 +1,14 @@
+{
+  "C1-1": {
+    "price": 3,
+    "capacity": 4
+  },
+  "C1-2": {
+    "price": 2,
+    "capacity": 4
+  },
+  "C2-2": {
+    "price": 4,
+    "capacity": 4
+  }
+}
