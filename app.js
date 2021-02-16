@@ -16,7 +16,9 @@ const legend4 = require("./inputs/ex4/legend.json")
 const request4 = require("./inputs/ex4/request.json")
 const maxCapacity4 = require("./inputs/ex4/maxCap.json")
 
-
+const legend5 = require("./inputs/ex5/legend.json")
+const request5 = require("./inputs/ex5/request.json")
+const maxCapacity5 = require("./inputs/ex5/maxCap.json")
 
 
 console.log("-- START --")
@@ -30,5 +32,8 @@ console.log("-- START --")
 //console.log("=== EXAMPLE 3 ===")
 //console.log( logistic(legend3, request3, maxCapacity3) )
 
-console.log("=== EXAMPLE 4 ===")
-console.log( logistic(legend4, request4, maxCapacity4) )
+//console.log("=== EXAMPLE 4 ===")
+//console.log( logistic(legend4, request4, maxCapacity4) )
+
+console.log("=== EXAMPLE 5 ===")
+console.log( logistic(legend5, request5, maxCapacity5) )

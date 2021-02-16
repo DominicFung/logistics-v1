@@ -1,0 +1,38 @@
+{
+  "ACS-L1": {
+    "price": 1356.3427,
+    "capacity": 100000
+  },
+  "Adco-L1": {
+    "price": 736.354,
+    "capacity": 5000
+  },
+  "AMANAT-L1": {
+    "price": 1014.1974,
+    "capacity": 100000
+  },
+  "APPS-L1": {
+    "price": 1130.1256,
+    "capacity": 100000
+  },
+  "AMANAT-L2": {
+    "price": 1049.1786,
+    "capacity": 100000
+  },
+  "AMANAT-L3": {
+    "price": 923.4071,
+    "capacity": 100000
+  },
+  "Armour-L4": {
+    "price": 869.53,
+    "capacity": 100000
+  },
+  "Armour-L5": {
+    "price": 790.38,
+    "capacity": 100000
+  },
+  "AMANAT-L6": {
+    "price": 2316.0331,
+    "capacity": 100000
+  }
+}
