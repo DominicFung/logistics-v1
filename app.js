@@ -28,6 +28,10 @@ const legend7 = require("./inputs/ex7/legend.json")
 const request7 = require("./inputs/ex7/request.json")
 const maxCapacity7 = require("./inputs/ex7/maxCap.json")
 
+const legend8 = require("./inputs/ex8/legend.json")
+const request8 = require("./inputs/ex8/request.json")
+const maxCapacity8 = require("./inputs/ex8/maxCap.json")
+
 console.log("-- START --")
 
 /**
@@ -63,6 +67,15 @@ console.log("-- START --")
 //console.log("=== EXAMPLE 6 ===")
 //console.log( logistic(legend6, request6, maxCapacity6) )
 
+/**
+ * Note: York Email 3; First large example
+ *   - backtracking was not triggered
+ */
+//console.log("=== EXAMPLE 7 ===")
+//console.log( logistic(legend7, request7, maxCapacity7) )
 
-console.log("=== EXAMPLE 7 ===")
-console.log( logistic(legend7, request7, maxCapacity7) )
+/**
+ * Note: York Email 4; No excel provided.
+ */
+console.log("=== EXAMPLE 8 ===")
+console.log( logistic(legend8, request8, maxCapacity8) )

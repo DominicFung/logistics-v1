@@ -220,6 +220,7 @@ const modify = (sorted, companyMaxT, laneT, bpointer, fpointer, actionItem, key,
 }
 
  const insertion = (sorted, company, lane, item) => {
+  if (item.capacity === 0) { return sorted }
   if (sorted.length === 0) {
     return [{ company, lane, price: item.price, capacity: item.capacity }]
   } else if (sorted.length === 1) {
