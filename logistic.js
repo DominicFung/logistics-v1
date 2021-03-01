@@ -1,17 +1,5 @@
-/**
-  * @param { { "company-lane": {price: number, capcity: number } ... } } legend 
-  * @param { { "lane": number ... } } request
-  * @param { { "company": number ... } } maxCapacity
-  * 
-  * @return {number}
-  */
- module.exports.logistic = (legend, request, maxCapacity) => {
+module.exports.sort = (legend) => {
   let sorted = []
-
-  let capacityTracker = request
-  let maxCapacityTracker = maxCapacity
-  let minPrice = 0
-
   /**
    * Create an ordered list, lowest price to highest
    * Complexity: O(n logn) - mergesort
@@ -19,11 +7,24 @@
   for (let name of Object.keys(legend)) {
     let company = name.split("-")[0]
     let lane = name.split("-")[1]
-    console.log(`INSERT: ${company}, ${lane}, price: ${legend[name].price}`)
     sorted = insertion(sorted, company, lane, legend[name]) 
   }
 
-  console.log(sorted)
+  return sorted
+}
+
+/**
+  * @param { { "company-lane": {price: number, capcity: number } ... } } legend 
+  * @param { { "lane": number ... } } request
+  * @param { { "company": number ... } } maxCapacity
+  * 
+  * @return {number}
+  */
+ module.exports.logistic = (sorted, request, maxCapacity) => {
+
+  let capacityTracker = request
+  let maxCapacityTracker = maxCapacity
+  let minPrice = 0
 
   /**
    * Allocate based on price, item capacity and max capacity
@@ -242,3 +243,5 @@ const modify = (sorted, companyMaxT, laneT, bpointer, fpointer, actionItem, key,
       return [...s1, { company, lane, price: item.price, capacity: item.capacity }, ...s2]
   }
  }
+
+ module.exports.insertion = insertion
