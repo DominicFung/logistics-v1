@@ -1,11 +1,15 @@
 {
   "name": "can-tire-logistics",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "A logistics solver. Given an unknown number of companies/paths/prices - minimize the cost.",
+  "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "dom fung",
-  "license": "ISC"
+  "author": "Dom Fung",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.0"
+  }
 }
